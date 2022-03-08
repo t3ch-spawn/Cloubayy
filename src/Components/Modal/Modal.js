@@ -25,16 +25,24 @@ const Modal = () => {
                 <div className="social-media">
                     <ul>
                         <li>
-                            <FaFacebook />
+                            <a href="https://web.facebook.com/profile.php?id=100010017672086">
+                                <FaFacebook />
+                            </a>
                         </li>
                         <li>
-                            <FaTwitter />
+                            <a href="https://twitter.com/AlugbinGodwin">
+                                <FaTwitter />
+                            </a>
                         </li>
                         <li>
+                            <a href="https://github.com/Godwin004code/Cloubayy">
                             <FaGithub />
+                            </a>
                         </li>
                         <li>
-                            <FaInstagram />
+                            <a href="https://www.instagram.com/godwin_alugbin/">
+                                <FaInstagram />
+                            </a>
                         </li>
                     </ul>
                 </div>

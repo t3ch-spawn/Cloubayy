@@ -11,40 +11,35 @@
     <link rel="shortcut icon" href="./favicon-16x16.png" type="image/x-icon">
     <title>CloudBay Offline</title>
     <style>
-                * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
-        body {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: sans-serif;
-            background-color: black;
-        }
-      
-
-
-h2 {
-    font-size: 1.5rem;
-    color: black;
-}
-p {
-    margin-top: .4rem;
-    font-size: 1.2rem;
-}
+        * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        width: 100%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+    audio {
+        width: 100%;
+        margin: 2rem auto;
+        
+    }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>You are currently offline</h2>
-        <p>Please check your internet connection</p>
         <div>
-            <audio src="../src/Tatiana_Manaois_-_Like_You.mp3"></audio>
+            <img src="./offline.png" alt="offline">
         </div>
+        
+            <audio src="../src/Tatiana_Manaois_-_Like_You.mp3"></audio>
+       
     </div>
 </body>
 </html>
