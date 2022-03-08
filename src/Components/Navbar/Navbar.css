@@ -1,0 +1,27 @@
+header {
+    width: 100%;
+    background-color: #000;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.logo {
+    display: flex;
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: white;
+}
+.logo-img {
+    font-size: 2rem;
+    color: white;
+    padding-right: .1rem;
+}
+
+.bars {
+    color: white;
+    font-size: 2rem;
+}
