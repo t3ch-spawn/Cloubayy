@@ -1,0 +1,38 @@
+
+
+.home__details {
+    width: 90%;
+    margin: 0 auto;
+    font-family: Montserrat;
+    & p {
+        margin-bottom: 1.3rem;
+        font-weight: 580;
+    }
+    & .avatar {
+        width: 100%;
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        & img {
+            width: 200px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.home__details h2 {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .home__details {
+        width: 90%;
+        & .avatar {
+            margin: 4rem 0;
+        }
+    }
+}

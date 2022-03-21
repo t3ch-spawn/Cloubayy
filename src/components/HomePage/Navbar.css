@@ -1,0 +1,105 @@
+.submenu ul {
+    display: none;
+    transition: all ease 2000ms;
+}
+
+.submenu li:first-child {
+    padding-top: 1rem;
+}
+
+
+.submenu li {
+    padding: 0 .5rem 2rem .5rem;
+}
+
+nav ul li .submenu ul {
+    transition: all ease 2000ms;
+}
+
+nav ul li:hover .submenu ul {
+    display: block;
+    position: absolute;
+}
+
+nav {
+    width: 80%;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.search {
+    padding: .5rem;
+}
+.times {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .times {
+        display: block;
+        position: absolute;
+        right: 4%;
+        top: 3%;
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+    .homepage nav {
+
+
+        display: none;
+        transform: translateX(-200%);
+        transition: all ease-in 1000ms;
+    }
+
+    .homepage nav ul {
+        display: block;
+    }
+
+    .homepage.show-nav nav {
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        transform: translateX(0%);
+        display: block;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+        
+        padding-left: 1rem;
+
+    }
+
+    .homepage.show-nav nav ul {
+        display: block;
+        transition: all ease-in 1000ms;
+    }
+
+    .homepage.show-nav nav ul li {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        
+    }
+
+    .homepage.show-nav nav ul li input {
+        margin-top: 1rem;
+    }
+
+    .homepage.show-nav nav ul .submenu ul {
+        display: block;
+    }
+    
+
+}

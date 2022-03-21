@@ -1,0 +1,23 @@
+
+@import 'Colors';
+
+.owner {
+    border-top: 1px solid $basic;
+    width: 90%;
+    margin: 3rem auto;
+    padding: 3rem 0 0 0;
+    & h3 {
+        text-align: center;
+        margin-bottom: 1rem;
+        padding-bottom: 3rem;
+        & a {
+            color: white;
+        }
+    } & p {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    & .name {
+        font-weight: 1000;
+    }
+}

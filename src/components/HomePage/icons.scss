@@ -1,0 +1,164 @@
+@import 'Colors';
+
+
+#darkMode {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+body {
+    overflow-x: hidden;
+}
+
+body.light {
+    background-color: white;
+    color: $light_text;
+    
+
+    & nav a {
+        color: $little;
+    }
+
+    & .submenu ul {
+        background-color: $little;
+
+        & a {
+            color: white;
+        }
+    }
+
+    & .disclaimer {
+        & li a {
+            color: $little;
+        }
+
+        & .angle__right {
+            color: $little;
+
+        }
+    }
+
+    & .owner {
+        & .name {
+            font-weight: 1000;
+        }
+    }
+    & .icons {
+        
+       .sun {
+           display: none;
+       }
+       .moon {
+           display: block;
+       }
+    }
+}
+
+
+// dark mode styling
+
+
+body.dark {
+    background-color: $little;
+    color: white;
+   
+
+    & nav a {
+        color: white;
+    }
+
+    & .submenu ul {
+        background-color: white;
+
+        & a {
+            color: $little;
+        }
+    }
+
+    & .disclaimer {
+        & li a {
+            color: white;
+        }
+    }
+    & .icons {
+        & button {
+            color: white;
+        }
+    }
+    & .icons {
+        
+        .sun {
+            display: block;
+        }
+        .moon {
+            display: none;
+        }
+     }
+}
+
+
+
+
+
+.icons {
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+    & button {
+        font-size: 1.2rem;
+        border: 0;
+
+    }
+}
+
+.bars {
+    display: none;
+}
+
+.sun__icon {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 768px;
+        max-width: 100%;
+    }
+    .icons {
+        width: 100%;
+        align-items: baseline;
+        
+    }
+    .bars {
+        display: block;
+    }
+
+    body.light {
+       & .homepage nav {
+           background-color: $little;
+           color: white;
+           & a {
+               color: white;
+           }
+       }
+       
+    }
+    body.dark {
+        & .homepage nav {
+            background-color: white;
+            color: $little;
+            & a {
+                color: $little;
+            }
+        }
+    }
+}

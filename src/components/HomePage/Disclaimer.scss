@@ -1,0 +1,31 @@
+
+
+.disclaimer {
+    width: 85%;
+    margin: 0 auto;
+    &__container {
+        display: none;
+        justify-content: space-between;
+        & .disclaimer__bulb {
+            font-size: 1.5rem;
+            color: yellow;
+        }
+    }
+    &__references {
+        & h2 {
+            text-align: center;
+            margin: 2rem 0 1rem 0;
+        }
+        & li {
+            //list-style-image: linear-gradient(red, red);
+            list-style-type: none;
+            
+            margin-bottom: 1rem;
+            & .angle__right {
+                margin-right: .6rem;
+            }
+           
+
+        }
+    }
+}

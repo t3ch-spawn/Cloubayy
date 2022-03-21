@@ -1,9 +1,19 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Monteserrat'), url(./Montserrat/static/Montserrat-Light.ttf) format('truetype');
 }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
 body {
-  position: relative;
-  overflow-x: hidden;
+    font-family: Montserrat, serif;
+    width: 100%;
+    background-color: #718355;
 }
